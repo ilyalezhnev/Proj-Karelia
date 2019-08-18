@@ -61,6 +61,10 @@ li {
   margin: 0 10px;
 }
 
+a {
+  text-decoration: none;
+}
+
 nav {
   display: flex;
   flex-direction: row;
@@ -353,6 +357,7 @@ background-size: 30px, 20px;
   color: white;
 }
 
+
 .promo {
   display: flex;
   flex-direction: column;
@@ -383,7 +388,14 @@ background-size: 30px, 20px;
 .promo-tiles {
   width: 100%;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+}
+
+.tiles-block {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
   justify-content: space-around;
 }
 
@@ -393,7 +405,6 @@ background-size: 30px, 20px;
   flex-direction: column;
   background-color: white;
   padding: 10px;
-  margin: 10px 10px 0 0;
   align-items: center;
   box-sizing: border-box;
   position: relative;
@@ -434,15 +445,18 @@ background-size: 30px, 20px;
   bottom: 20px;
 }
 
-.see-all,
+.see-all-link {
+  color: #575757;
+}
+
 .points-title {
-  width: 175px;
+  width: 166px;
   text-align: center;
   background-color: white;
   font-family: "PTSerifPro", sans-serif;
   font-size: 18px;
   color: #575757;
-  padding: 10px 15px;
+  padding: 10px 10px;
   border-radius: 25px;
   margin: 20px 0;
 }
@@ -450,7 +464,7 @@ background-size: 30px, 20px;
 .about-restaurant {
   background: url("/img/hall-ps.jpg") no-repeat center center;
   background-size: cover;
-  padding: 0 55px 65px;
+  padding: 0 60px 65px;
 }
 
 .about-wrapper {
@@ -475,10 +489,18 @@ background-size: 30px, 20px;
 .points {
   width: 100%;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   justify-content: center;
   align-items: flex-end;
-  margin-top: 10px;
+  box-sizing: border-box;
+}
+
+.points-block {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  align-items: flex-end;
   box-sizing: border-box;
 }
 
@@ -486,8 +508,7 @@ background-size: 30px, 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  margin: 0 5px;
+  margin: 0 15px;
 }
 
 .points-icon {
@@ -517,7 +538,7 @@ background-size: 30px, 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
 }
 
 .about-bankets {
@@ -548,12 +569,21 @@ background-size: 30px, 20px;
   justify-content: center;
 }
 
+.halls-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 5px;
+
+}
+
 .halls-title {
   background: #9aa500;
   color: white;
   font-size: 20px;
   padding: 5px 15px;
   border-radius: 45px;
+  margin-bottom: 5px;
 }
 
 .banket-menu {
@@ -579,7 +609,8 @@ background-size: 30px, 20px;
 }
 
 .banket-cost-form {
-  min-width: 400px;
+  height: fit-content;
+  width: 440px;
   background: #8e9901;
   padding: 35px;
   display: flex;
@@ -599,7 +630,7 @@ background-size: 30px, 20px;
 
 .nice-select .list {
   display: block;
-  width: 100%;
+  min-width: 100%;
 }
 
 .count-of-peolple {
@@ -767,12 +798,79 @@ background-size: 30px, 20px;
   margin-top: -43px;
 }
 
-@media (max-width: 1399.98px) {
-
+@media (max-width: 1439.98px) {
+  .points-item {
+    margin: 0px 7px;
+  }
 }
 
-@media (max-width: 1199.98px) {
+@media (max-width: 1365.98px) {
+  .slider-title {
+    font-size: 60px;
+  }
+  
+  .points {
+    flex-flow: row wrap;
+  }
+  .halls-title {
+    font-size: 18px;
+  }
+  .menu-title {
+    font-size: 18px;
+  }
   .bankets {
     padding-left: 0;
   }
+  .banket-cost-form {
+    height: auto;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  header,
+  .promo,
+  .about-chief,
+  .about-bankets {
+    padding: 0 40px;
+  }
+  .about-restaurant {
+    padding: 0 40px 65px;
+  }
+  .banket-cost-form {
+    height: fit-content;
+  }
+  .about-chief {
+    flex-flow: row wrap;
+  }
+  .about-bankets {
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  .promo-tiles {
+    flex-flow: row wrap;
+  }
+  .tiles-block {
+    margin-bottom: 10px;
+    justify-content: center;
+  }
+  .tile {
+    margin: 0 10px;
+  }
+  .bankets {
+    padding: 0;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .slider-title {
+    font-size: 54px;
+  }
+}
+
+@media (max-width: 767.98px) {
+
+}
+
+@media (max-width: 575.98px) {
+
 }
