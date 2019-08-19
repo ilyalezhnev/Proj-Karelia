@@ -67,6 +67,8 @@ a {
 }
 
 nav {
+  min-height: 60px;
+  padding-bottom: 8px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -105,22 +107,6 @@ header {
   padding: 0 60px;
 }
 
-nav {
-  width: 100%;
-  min-height: 60px;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-flow: row wrap;
-  flex-flow: row wrap;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding-bottom: 8px;
-}
-
 button {
   border: none;
   outline: 0;
@@ -135,10 +121,10 @@ form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-flow: row wrap;
-  flex-flow: row wrap;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -146,6 +132,19 @@ form {
 
 .nav-menu {
   width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .nav-item {
@@ -270,6 +269,19 @@ form {
 
 .email {
   padding: 0 20px;
+}
+
+.language {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0 10px 0 50px;
 }
 
 .dropdown {
@@ -441,11 +453,11 @@ form {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 295px;
   height: 75px;
   background: -webkit-gradient(linear, left top, right top, from(#cdd198), to(#828c03));
@@ -603,6 +615,7 @@ form {
   font-family: "PTSerifPro", sans-serif;
   font-size: 18px;
   color: #575757;
+  vertical-align: middle;
   padding: 10px 5px;
   border-radius: 25px;
   margin: 20px 0;
@@ -648,16 +661,16 @@ form {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .points-block {
@@ -666,16 +679,16 @@ form {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .points-item {
@@ -689,7 +702,7 @@ form {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin: 0 15px;
+  margin: 0 13px;
 }
 
 .points-icon {
@@ -826,26 +839,9 @@ form {
 .SerifProItalicBig {
   font-family: "PTSerifPro-Italic", sans-serif;
   font-size: 22px;
-
 }
 
 .banket-menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-}
-
-.banket-menus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -856,9 +852,9 @@ form {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 
 .menu-item {
@@ -894,7 +890,7 @@ form {
   height: fit-content;
   width: 440px;
   background: #8e9901;
-  padding: 35px;
+  padding: 30px 35px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -910,7 +906,7 @@ form {
 }
 
 .nice-select {
-  width: 100%;
+  width: 100% !important;
   font-family: "PTSerifPro", sans-serif !important;
   font-size: 18px !important;
   color: #575757;
@@ -926,7 +922,7 @@ form {
 }
 
 .count-of-peolple {
-  margin: 20px 10px 0 0;
+  margin-top: 20px;
 }
 
 .count-of-peolple > input {
@@ -941,7 +937,7 @@ form {
 }
 
 .date {
-  margin: 20px 10px 0 0;
+  margin-top: 20px;
 }
 
 .date > input {
@@ -977,14 +973,14 @@ form {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 100%;
   height: 165px;
   background: white;
@@ -1146,34 +1142,59 @@ form {
   margin-top: -43px;
 }
 
+.form-field {
+  width: 100%;
+}
+
+input {
+  width: 100%;
+}
+
 @media (max-width: 1439.98px) {
   .points-item {
-    margin: 0px 7px;
+    margin: 0px 11px;
   }
 }
 
 @media (max-width: 1365.98px) {
-  .slider-title {
-    font-size: 60px;
+  li {
+    margin-left: 40px;
   }
-
+  .nav-items li:first-child {
+    margin-left: 0;
+  }
+  .main-logo-title {
+    font-size: 26px;
+  }
+  .tile {
+    margin: 0 10px;
+  }
+  .points-block {
+    width: 80%;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+  }
   .points {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-flow: row wrap;
     flex-flow: row wrap;
   }
-  .halls-title {
-    font-size: 18px;
-  }
-  .menu-title {
-    font-size: 18px;
+  .title {
+    min-height: 50px;
   }
   .bankets {
-    padding-left: 0;
+    padding: 0 30px 0 0;
   }
-  .banket-cost-form {
-    height: auto;
+  .halls-title,
+  .menu-title {
+    width: 165px;
+    font-size: 17px;
+  }
+  .halls-item,
+  .menu-item {
+    margin: 15px 15px 0;
   }
 }
 
@@ -1185,18 +1206,73 @@ form {
     padding: 0 40px;
   }
   .about-restaurant {
-    padding: 0 40px 65px;
+    padding: 0 40px 45px;
   }
-  .banket-cost-form {
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
+  .main-logo-title {
+    font-size: 21px;
   }
-  .about-chief {
+  .slider-title {
+    font-size: 56px;
+    line-height: 54px;
+  }
+  .order {
+    font-size: 20px;
+    width: 260px;
+    height: 60px;
+  }
+  .promo-tiles {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-flow: row wrap;
     flex-flow: row wrap;
+  }
+  .tiles-block {
+    width: 80%;
+    margin-bottom: 10px;
+  }
+  .nav-menu {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .p-text-about {
+    font-size: 15px;
+  }
+  .points-title {
+    font-size: 16px;
+    padding: 12px 5px;
+  }
+  .promo-link {
+    font-size: 15px;
+  }
+  .halls-title,
+  .menu-title {
+    width: 130px;
+    font-size: 16px;
+  }
+  .halls-item,
+  .menu-item {
+    margin: 15px 10px 0;
+  }
+  .SerifProItalic {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  header,
+  .promo,
+  .about-bankets {
+    padding: 0 15px;
+  }
+  .about-restaurant {
+    padding: 0 15px 15px;
+  }
+  .about-chief {
+    padding: 20px 15px;
+  }
+  .about-chief-text-layout {
+    padding: 0 15px;
   }
   .about-bankets {
     -webkit-box-orient: horizontal;
@@ -1207,34 +1283,158 @@ form {
     -ms-flex-pack: center;
     justify-content: center;
   }
-  .promo-tiles {
+  .bankets {
+    padding: 0 15px;
+  }
+  .order {
+    font-size: 18px;
+  }
+  .SerifProItalicBig {
+    font-size: 20px;
+  }
+  .slider-title {
+    font-size: 50px;
+    line-height: 51px;
+  }
+  .main-logo-title {
+    font-size: 24px;
+    line-height: 20px;
+  }
+  .about-chief {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-flow: row wrap;
     flex-flow: row wrap;
   }
-  .tiles-block {
-    margin-bottom: 10px;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+  .halls,
+  .banket-menu {
+    width: 80%;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
   }
-  .tile {
-    margin: 0 10px;
+  .banket-cost-form {
+    width: 80%;
   }
-  .bankets {
-    padding: 0;
+  form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
-}
-
-@media (max-width: 991.98px) {
-  .slider-title {
-    font-size: 54px;
+  .form-field {
+    width: 80%;
+  }
+  .nice-select {
+    width: 100% !important;
+  }
+  .phone {
+    font-size: 17px;
+  }
+  .order-call-title {
+    font-size: 13px;
+    margin-left: 5px;
   }
 }
 
 @media (max-width: 767.98px) {
+  header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .icons,
+  .main-logo,
+  .contacts {
+    width: 100%;
+  }
+  .contacts {
+    margin: 10px 0;
+  }
+  .main-logo-title {
+    font-size: 28px;
+    margin: 10px 0;
+  }
+  .contacts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .phone {
+    font-size: 30px;
+  }
+  .order-call {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .order-call-title {
+    font-size: 20px;
+  }
+  .call {
+    margin-bottom: 10px;
+  }
+  .slider-title {
+    font-size: 45px;
+    line-height: 45px;
+  }
+  .points-title {
+    width: 150px;
+    font-size: 15px;
+    padding: 13px 5px;
+  }
+  .tiles-block {
+    width: 100%;
+  }
+  .halls,
+  .banket-menu {
+    width: 100%;
+  }
+  .form-field {
+    width: 100%;
+  }
 }
 
 @media (max-width: 575.98px) {
+  .slider-title {
+    font-size: 35px;
+    line-height: 35px;
+  }
+  .main-logo-title {
+    margin: 10px 0;
+  }
+  .tiles-block {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    margin-bottom: 0;
+  }
+  .tile {
+    margin-top: 10px;
+  }
+  .points-block {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+  }
+  .banket-cost-form {
+    width: 100%;
+  }
+  .select-menu {
+    height: auto;
+  }
+  .menu-types {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
 }
